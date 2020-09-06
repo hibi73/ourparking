@@ -1,9 +1,9 @@
 class CommentsController < ApplicationController
 
   def create
-    @park = Item.find(params[:park_id])
+    @park = Park.find(params[:park_id])
     Comment.create(comment_params)
-    redirect_to item_path(@park.id)
+    redirect_to park_path(@park.id)
   end
 
   private

@@ -21,6 +21,8 @@ class ParksController < ApplicationController
   end
 
   def show
+    @comment = Comment.new
+    @comments = @park.comments.includes(:user)
   end
 
   def edit

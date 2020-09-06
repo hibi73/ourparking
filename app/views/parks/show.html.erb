@@ -101,16 +101,21 @@
   <%# /駐車場の概要 %>
 
   <div class="comment-box">
-    <form>
-      <textarea class="comment-text"></textarea>
-      <p class="comment-warn">
-        相手のことを考え丁寧なコメントを心がけましょう。
-      </p>
-      <button type="submit" class="comment-btn">
-        
-        <span>駐車場について質問する<span>
-      </button>
-    </form>
+      <%= form_with(model: [@park, @comment], local: true) do |form| %>
+        <%= form.text_area :text, class:"comment-text", placeholder: "駐車場についてコメントする", rows: "2" %>
+        <%= form.submit "駐車場についてコメントする", class:"comment-btn" %>
+      <% end %>
+      <div class="comments">
+          <h4>＜コメント覧＞</h4>
+          <% if @comments %>
+            <% @comments.each do |comment| %>
+              <p>
+                <strong><%= link_to comment.user.nickname %>：</strong>
+                <%= comment.text %>
+              </p>
+            <% end %>
+          <% end %>
+        </div>
   </div>
 </div>
 
