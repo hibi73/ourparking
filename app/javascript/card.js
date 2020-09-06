@@ -1,6 +1,7 @@
 const pay = () => {
   Payjp.setPublicKey(process.env.PAYJP_PUBLIC_KEY);
   const form = document.getElementById("charge-form");
+  console.log("test")
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -16,7 +17,6 @@ const pay = () => {
       if (status === 200) {
         const token = response.id;
         const renderDom = document.getElementById("charge-form");
-        console.log("test")
         const tokenObj = `<input value=${token} type="hidden" name='token'>`;
         renderDom.insertAdjacentHTML("beforeend", tokenObj);
 
