@@ -1,0 +1,21 @@
+.login-btn {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.login-orange-btn {
+  width: 100%;
+  background: #F99F48;
+  border: 1px solid #F99F48;
+  color: #fff;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-flash-message {
+  text-align: center;
+  color: red;
+}

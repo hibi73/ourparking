@@ -1,0 +1,117 @@
+<%= render "shared/header" %>
+
+<%# 駐車場の概要 %>
+<div class="park-show">
+  <div class="park-box">
+    <h2 class="name">
+      <%= @park.name %>
+    </h2>
+    <div class='park-img-content'>
+    <%= image_tag @park.image ,class:"park-box-img" %>
+      
+      
+      <% if @park.purchase != nil  %>
+        <div class='reserved'>
+          <span>予約済</span>
+        </div>
+      <% end %>
+      
+    </div>
+    <div class="park-price-box">
+      <span class="park-price">
+         <%=  @park.use_date %>
+      </span>
+    </div>
+
+    <div class="park-price-box">
+      <span class="park-price">
+        ¥ <%=  @park.price %> / 日
+      </span>
+    </div>
+    
+    <div class="park-explain-box">
+      <span><%= @park.description %></span>
+    </div>
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-park">駐車場 長さ</th>
+          <td class="detail-value"><%= @park.park_length %> m</td>
+        </tr>
+        <tr>
+          <th class="detail-park">駐車場 横幅</th>
+          <td class="detail-value"><%= @park.park_width %> m</td>
+        </tr>
+        <tr>
+          <th class="detail-park">駐車場 高さ</th>
+          <td class="detail-value"><%= @park.park_height %> m</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <table class="detail-table">
+      <tbody>
+      <tr>
+          <th class="detail-park">駐車場登録者</th>
+          <td class="detail-value"><%= @park.user.nickname %></td>
+        </tr>
+        <tr>
+          <th class="detail-park">郵便番号</th>
+          <td class="detail-value"><%= @park.postal_code %></td>
+        </tr>
+        <tr>
+          <th class="detail-park">都道府県</th>
+          <td class="detail-value"><%= @park.prefecture %></td>
+        </tr>
+        <tr>
+          <th class="detail-park">市区町村</th>
+          <td class="detail-value"><%= @park.municipality %></td>
+        </tr>
+        <tr>
+          <th class="detail-park">番地</th>
+          <td class="detail-value"><%= @park.house_number %></td>
+        </tr>
+        <tr>
+          <th class="detail-park">建物名</th>
+          <td class="detail-value"><%= @park.building_name %></td>
+        </tr>
+        <tr>
+          <th class="detail-park">電話番号 </th>
+          <td class="detail-value"><%= @park.phone_number %></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <% if user_signed_in? && current_user.nickname == @park.user.nickname  %>
+    <%= link_to '駐車場の情報を編集', edit_park_path(@park.id), method: :get, class: "park-orange-btn" %>
+    <p class='or-text'>or</p>
+    <%= link_to '削除', park_path(@park.id), method: :delete, class:'park-destroy' %>
+    <% end %>
+    
+    <% if user_signed_in? && current_user.nickname != @park.user.nickname && @park.purchase == nil %>
+    <%= link_to '予約購入画面に進む', park_purchases_path(@park.id),class:"park-orange-btn"%>
+    <% end %>
+    
+    <div class="option">
+      <div class="favorite-btn">
+        <span>お気に入り 0</span>
+      </div>
+    </div>
+  </div>
+  <%# /駐車場の概要 %>
+
+  <div class="comment-box">
+    <form>
+      <textarea class="comment-text"></textarea>
+      <p class="comment-warn">
+        相手のことを考え丁寧なコメントを心がけましょう。
+      </p>
+      <button type="submit" class="comment-btn">
+        
+        <span>駐車場について質問する<span>
+      </button>
+    </form>
+  </div>
+</div>
+
+<%= render "shared/footer" %>
