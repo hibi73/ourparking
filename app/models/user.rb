@@ -7,6 +7,12 @@ class User < ApplicationRecord
   has_many :comments
   has_many :purchases
 
+  def self.guest
+    find_or_create_by!(nickname: 'guest', email: 'guest@example.com') do |user|
+      user.password = SecureRandom.hex()
+    end
+  end
+
   validates :nickname, presence: true
   validate :password_complexity
 end
