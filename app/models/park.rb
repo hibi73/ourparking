@@ -4,6 +4,14 @@ class Park < ApplicationRecord
   has_many :comments
   has_one :purchase
 
+  def self.search(search)
+    if search != ""
+      Park.where('name LIKE(?)', "%#{search}%")
+    else
+      Park.all
+    end
+  end
+
   with_options presence: true do
     validates :image
     validates :name

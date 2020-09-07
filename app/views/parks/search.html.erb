@@ -1,0 +1,77 @@
+<%= render "shared/header" %>
+<div class='main'>
+
+<%# OUR PARKINGの使い方 %>
+  <div class='how-contents'>
+    <h2 class='how-title'>
+      OUR PARKINGの使い方
+    </h2>
+    <p class='how-rent'>
+      駐車場を貸したい！
+    </p>
+    <p class='how-explain'>
+      1. 無料会員登録
+    </p>
+    <p class='how-explain'>
+      2. 貸したい駐車場を登録しましょう
+    </p>
+    <p class='how-explain'>
+      3. 駐車場が利用されると収益が発生します
+    </p>
+
+    <p class='how-lease'>
+      駐車場を借りたい！
+    </p>
+    <p class='how-explain'>
+      1. 無料会員登録
+    </p>
+    <p class='how-explain'>
+      2. 借りたい駐車場を予約購入しましょう
+    </p>
+    <p class='how-explain'>
+      3. 予約購入した駐車場を利用します
+    </p>
+  </div>
+  <%# OUR PARKINGの使い方 %>
+
+  <%# 駐車場一覧 %>
+  <div class='park-contents'>
+    <%= link_to '駐車場一覧', "#", class: "subtitle" %>
+    <ul class='park-lists'>
+
+      <% @parks.each do |park| %>
+      <li class='list'>
+        <%= link_to "#" do %>
+        <div class='park-img-content'>
+        <%= link_to image_tag(park.image, class: "park-img"), park_path(park.id) %>
+
+          <% if park.purchase != nil  %>
+          <div class='reserved'>
+            <span>予約済</span>
+          </div>
+          <% end %>
+
+        </div>
+        <div class='park-info'>
+          <h3 class='park-name'>
+            <%= park.name %>
+          </h3>
+          <div class='prefecture'>
+            <span><%= park.prefecture %><%= park.municipality %></span>
+          </div>
+          <div class='park-use-date'>
+            <span><%= park.use_date %>
+          </div>
+          <div class='park-price'>
+            <span>¥ <%= park.price %>円 / 日</span>
+          </div>
+        </div>
+        <% end %>
+      </li>
+      <% end %>
+  <%# /駐車場一覧 %>
+</div>
+<div class='park-btn'>
+  <%= link_to '駐車場登録', new_park_path, class: "park-btn-text" %>
+</div>
+<%= render "shared/footer" %>

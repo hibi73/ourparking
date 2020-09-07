@@ -1,6 +1,6 @@
 class ParksController < ApplicationController
-  before_action :move_to_new_user_session, except: [:index, :show]
-  before_action :move_to_root_path, except: [:index, :new, :create, :show]
+  before_action :move_to_new_user_session, except: [:index, :show, :search]
+  before_action :move_to_root_path, except: [:index, :new, :create, :show, :search]
   before_action :set_park, only: [:show, :edit, :update]
 
   def index
@@ -41,6 +41,10 @@ class ParksController < ApplicationController
     if park.destroy
       redirect_to root_path
     end
+  end
+
+  def search
+    @parks = Park.search(params[:keyword])
   end
 
   private
