@@ -46,9 +46,13 @@
         <%= link_to image_tag(park.image, class: "park-img"), park_path(park.id) %>
 
           <% if park.purchase != nil  %>
-          <div class='reserved'>
-            <span>予約済</span>
-          </div>
+            <div class='reserved'>
+              <span>予約済</span>
+            </div>
+          <% else %>
+            <div class='recruitment'>
+              <span>予約募集中</span>
+            </div>
           <% end %>
 
         </div>
