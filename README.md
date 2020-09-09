@@ -1,3 +1,10 @@
+# OUR PARKING
+
+## OUR PARKINGでできること
+OUR PARKINGとは、駐車場を1日単位で予約したり、
+空いている駐車場を利用したい方に提供ができるサービスです。
+
+## OUR PARKINGの制作背景
 
 
 
