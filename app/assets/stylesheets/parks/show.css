@@ -92,24 +92,6 @@
   font-size: 14px;
 }
 
-.option {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-}
-
-.favorite-btn {
-  border-radius: 40px;
-  width: 15vw;
-  min-width: 200px;
-  color: #F99F48;
-  border: 2px solid #F99F48;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 20px;
-}
-
 .favorite-star-icon {
   margin-right: 5px;
 }

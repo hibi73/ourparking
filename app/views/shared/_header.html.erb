@@ -1,7 +1,7 @@
 <%# CSS・・・assets/stylesheets/shared/header.css %>
 <header class='top-page-header'>
   <div class='search-bar-contents'>
-    <%= link_to image_tag("ourparking.png", class:"outparking-icon"), "/" %>
+    <%= link_to image_tag("ourparking.png", class:"ourparking-icon"), "/" %>
 
     <%= form_with(url: search_parks_path, local: true, method: :get, class: "search-form") do |form| %>
       <%= form.text_field :keyword, placeholder: "地名・スポット名で検索", class: "input-box" %>

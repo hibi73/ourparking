@@ -95,12 +95,6 @@
     <% if user_signed_in? && current_user.nickname != @park.user.nickname && @park.purchase == nil %>
     <%= link_to '予約購入画面に進む', park_purchases_path(@park.id),class:"park-orange-btn"%>
     <% end %>
-    
-    <div class="option">
-      <div class="favorite-btn">
-        <span>お気に入り 0</span>
-      </div>
-    </div>
   </div>
   <%# /駐車場の概要 %>
 
