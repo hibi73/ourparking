@@ -3,9 +3,9 @@
 
 
 
-## テーブル設計
+# テーブル設計
 
-### users テーブル
+## users テーブル
 
 | Column   | Type   | Options     |
 | -------- | ------ | ----------- |
@@ -13,13 +13,13 @@
 | email    | string | null: false |
 | password | string | null: false |
 
-#### Association
+### Association
 
 - has_many :parks
 - has_many :comments
 - has_many :purchases
 
-### parks テーブル
+## parks テーブル
 
 | Column        | Type       | Options                        |
 | ------        | ------     | -----------                    |
@@ -38,26 +38,26 @@
 | use_date      | date       | null: false                    |
 | user          | references | null: false, foreign_key: true |
 
-#### Association
+### Association
 
 - belongs_to :user
 - has_many :comments
 - has_one :purchase
 
-### purchases テーブル
+## purchases テーブル
 
 | Column | Type       | Options                        |
 | ------ | ------     | -----------                    |
 | user   | references | null: false, foreign_key: true |
 | park   | references | null: false, foreign_key: true |
 
-#### Association
+### Association
 
 - belongs_to :user
 - belongs_to :park
 - has_one :car
 
-### cars テーブル
+## cars テーブル
 
 | Column     | Type       | Options                        |
 | ------     | ------     | -----------                    |
@@ -65,11 +65,11 @@
 | car_number | string     | null: false                    |
 | purchase   | references | null: false, foreign_key: true |
 
-#### Association
+### Association
 
 - belongs_to :purchase
 
-### comments テーブル
+## comments テーブル
 
 | Column  | Type       | Options                        |
 | ------- | ---------- | ------------------------------ |
@@ -77,7 +77,7 @@
 | user    | references | null: false, foreign_key: true |
 | park    | references | null: false, foreign_key: true |
 
-#### Association
+### Association
 
 - belongs_to :user
 - belongs_to :park
