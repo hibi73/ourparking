@@ -64,7 +64,7 @@
             <span><%= park.prefecture %><%= park.municipality %></span>
           </div>
           <div class='park-use-date'>
-            <span><%= park.use_date %>
+            <span><%= park.use_date.strftime('%Y/%m/%d') %>
           </div>
           <div class='park-price'>
             <span>¥ <%= park.price %>円 / 日</span>
