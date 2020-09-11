@@ -73,8 +73,10 @@ a {
 
 .park-lists>.list {
   width: 37vh;
-  padding: 1vw;
+  padding: 0.5vw 1vw;
+  margin: 0.5vw;
   background-color: #FFF;
+  border: 1.5px solid #333;
 }
 
 
@@ -88,8 +90,6 @@ a {
 }
 
 .reserved {
-  position: absolute;
-  top: 85%;
   width: 100%;
   text-align: center;
   background-color: #F99F48;
@@ -102,8 +102,6 @@ a {
 }
 
 .recruitment {
-  position: absolute;
-  top: 85%;
   width: 100%;
   text-align: center;
   background-color: #78BBE6;
@@ -123,6 +121,9 @@ a {
 
 .park-name {
   font-size: 2.5vh;
+  color: black;
+  margin-bottom: 1vh;
+  text-align: center;
 }
 
 .park-price {

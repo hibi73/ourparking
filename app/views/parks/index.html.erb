@@ -6,31 +6,31 @@
     <h2 class='how-title'>
       OUR PARKINGの利用方法
     </h2>
-    <p class='how-rent'>
-      駐車場を提供したい！
-    </p>
-    <p class='how-explain'>
-      1. 無料会員登録
-    </p>
-    <p class='how-explain'>
-      2. 提供したい駐車場を登録
-    </p>
-    <p class='how-explain'>
-      3. 駐車場が利用された料金に応じた報酬を受け取る
-    </p>
+      <p class='how-rent'>
+        駐車場を提供したい！
+      </p>
+      <p class='how-explain'>
+        1. 無料会員登録
+      </p>
+      <p class='how-explain'>
+        2. 提供したい駐車場を登録
+      </p>
+      <p class='how-explain'>
+        3. 駐車場が利用された料金に応じた報酬を受け取る
+      </p>
 
-    <p class='how-lease'>
-      駐車場を利用したい！
-    </p>
-    <p class='how-explain'>
-      1. 無料会員登録
-    </p>
-    <p class='how-explain'>
-      2. 利用したい駐車場を予約購入
-    </p>
-    <p class='how-explain'>
-      3. 予約購入した駐車場を利用
-    </p>
+      <p class='how-lease'>
+        駐車場を利用したい！
+      </p>
+      <p class='how-explain'>
+        1. 無料会員登録
+      </p>
+      <p class='how-explain'>
+        2. 利用したい駐車場を予約購入
+      </p>
+      <p class='how-explain'>
+        3. 予約購入した駐車場を利用
+      </p>
   </div>
   <%# OUR PARKINGの使い方 %>
 
@@ -42,6 +42,9 @@
       <% @parks.each do |park| %>
       <li class='list'>
         <%= link_to "#" do %>
+        <h3 class='park-name'>
+            <%= park.name %>
+          </h3>
         <div class='park-img-content'>
         <%= link_to image_tag(park.image, class: "park-img"), park_path(park.id) %>
 
@@ -57,9 +60,6 @@
 
         </div>
         <div class='park-info'>
-          <h3 class='park-name'>
-            <%= park.name %>
-          </h3>
           <div class='prefecture'>
             <span><%= park.prefecture %><%= park.municipality %></span>
           </div>
