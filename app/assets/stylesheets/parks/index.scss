@@ -11,27 +11,21 @@ a {
   width: 100vw;
   background-color: #78BBE6;
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-around;
   padding: 2.5vh 15vw;
   color: #fff;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
-.how-title {
-  font-size: 6vh;
-  margin-bottom: 2vh;
+.how-rent {
+  font-size: 5vh;
   color: #F99F48;
 }
 
-.how-rent {
-  font-size: 4vh;
-}
-
 .how-lease {
-  font-size: 4vh;
-  margin-top: 1vh;
+  font-size: 5vh;
+  color: #F99F48;
 }
 
 .how-explain {
@@ -47,7 +41,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10vh 0;
+  padding: 5vh 0;
 }
 
 .item-contents>.title {
