@@ -10,7 +10,7 @@
       <%= image_tag @park.image, class: 'buy-park-img' %>
       <div class='buy-park-right-content'>
         <h2 class='buy-park-text'>
-          <%= @park.use_date %>
+          <%= @park.use_date.strftime('%Y/%m/%d') %>
         </h2>
         <div class='buy-park-price'>
           <p class='park-price-text'>¥<%= @park.price %> / 日</p>
