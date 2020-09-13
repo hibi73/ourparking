@@ -47,14 +47,32 @@ http://18.182.144.205/
 
 ## 実装した機能
 - ユーザー管理機能
+<img width="1440" alt="スクリーンショット 2020-09-13 19 20 36" src="https://user-images.githubusercontent.com/66819398/93015701-6f857a80-f5f6-11ea-8d3c-3ffc7f6a1b60.png">
+
 - 駐車場の情報を登録する機能
+https://gyazo.com/ad9e622ec721babdf458c54789119597
+
 - 駐車場の一覧を表示する機能
+<img width="1440" alt="スクリーンショット 2020-09-13 19 23 30" src="https://user-images.githubusercontent.com/66819398/93015746-e0c52d80-f5f6-11ea-8e6f-df1aef924720.png">
+
 - 駐車場の詳細な情報を表示する機能
+https://gyazo.com/97848ac8f0a3f3cd1f92382390dac59b
+
 - 駐車場の詳細な情報を編集する機能
+https://gyazo.com/01d2dfee68d2972e95daaa04f451d722
+
 - 駐車場の情報を削除する機能
+<img width="1440" alt="スクリーンショット 2020-09-13 19 31 57" src="https://user-images.githubusercontent.com/66819398/93015885-09015c00-f5f8-11ea-92dd-364b477d605d.png">
+
 - 駐車場を予約購入する機能
+https://gyazo.com/83fb81111504fce4076108c857f165ca
+
 - 駐車場を検索する機能
+<img width="1440" alt="スクリーンショット 2020-09-13 19 36 05" src="https://user-images.githubusercontent.com/66819398/93015948-89c05800-f5f8-11ea-8985-7238e081579a.png">
+
 - 駐車場に関して質問する機能
+<img width="1440" alt="スクリーンショット 2020-09-13 19 38 37" src="https://user-images.githubusercontent.com/66819398/93016005-e754a480-f5f8-11ea-87bf-f0e864135535.png">
+
 
 ## DB設計
 
