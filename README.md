@@ -42,7 +42,7 @@ http://18.182.144.205/
 - HTML
 - CSS
 - JavaScript
-- MYSQL 0.5.3
+- MySQL 0.5.3
 - GitHub
 - AWS
 
