@@ -64,13 +64,13 @@ context '駐車場購入情報の保存がうまくいいかないとき' do
     it '価格(price)が500より小さいと保存できないこと' do
       @park.price = 499
       @park.valid?
-      expect(@park.errors.full_messages).to include("Price must be greater than 500")
+      expect(@park.errors.full_messages).to include("Price must be greater than 499")
     end
 
     it '価格(price)が999999より大きいと保存できないこと' do
       @park.price = 1000000
       @park.valid?
-      expect(@park.errors.full_messages).to include("Price must be less than 999999")
+      expect(@park.errors.full_messages).to include("Price must be less than 1000000")
     end
     
     it '利用可能日(use_date)が空では保存できないこと' do

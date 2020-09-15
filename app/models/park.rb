@@ -25,7 +25,7 @@ class Park < ApplicationRecord
     validates :house_number
     validates :phone_number, format: {with: /\A\d{10,11}\z/}
     validates :use_date
-    validates :price, numericality: { only_integer: true,greater_than: 500, less_than: 999999}
+    validates :price, numericality: { only_integer: true,greater_than: 499, less_than: 1000000}
   end
 
 end
