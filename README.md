@@ -46,7 +46,7 @@ http://18.182.144.205/
 - JavaScript
 - MySQL
 - GitHub
-- AWS
+- AWS (EC2)
 
 ## 実装した機能
 ### ・ユーザー管理機能
