@@ -5,6 +5,7 @@ class ParksController < ApplicationController
 
   def index
     @parks = Park.all
+    @parks = Park.all.page(params[:page]).per(3)
   end
 
   def new
