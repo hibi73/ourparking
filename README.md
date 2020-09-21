@@ -47,6 +47,7 @@ http://18.182.144.205/
 - MySQL
 - GitHub
 - AWS (S3,EC2)
+- Visual Studio Code
 
 ## 実装した機能
 ### ・ユーザー管理機能
