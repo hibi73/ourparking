@@ -37,6 +37,7 @@
 
   <%# 駐車場一覧 %>
   <div class='park-contents'>
+    <%= paginate @parks %>
     <%= link_to '駐車場一覧', "#", class: "subtitle" %>
     <ul class='park-lists'>
 
@@ -76,7 +77,6 @@
       <% end %>
   <%# /駐車場一覧 %>
 </div>
-<%= paginate @parks %>
 <div class='park-btn'>
   <%= link_to '駐車場登録', new_park_path, class: "park-btn-text" %>
 </div>
