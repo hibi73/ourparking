@@ -39,14 +39,13 @@ http://18.182.144.205/
 - 利用しやすくする為に、ホーム画面を見るだけで利用方法がわかるようにしました。
 
 ## 使用技術
-- Ruby
-- Ruby on Rails
-- HTML
-- CSS
+- Ruby 2.6.5
+- Ruby on Rails 6.0.0
+- HTML / CSS
 - JavaScript
-- MySQL
+- MySQL2
 - GitHub
-- AWS (S3,EC2)
+- AWS (S3 / EC2)
 - Visual Studio Code
 
 ## 実装した機能
