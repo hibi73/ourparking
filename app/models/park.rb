@@ -5,7 +5,7 @@ class Park < ApplicationRecord
   has_one :purchase
 
   def self.search(search)
-    if search != ''
+    if search != ""
       Park.where('name LIKE(?)', "%#{search}%")
     else
       Park.all
@@ -19,12 +19,13 @@ class Park < ApplicationRecord
     validates :park_width
     validates :park_height
     validates :description
-    validates :postal_code, format: { with: /\A[0-9]{3}-[0-9]{4}\z/, message: 'is invalid. Include hyphen(-)' }
+    validates :postal_code, format: {with: /\A[0-9]{3}-[0-9]{4}\z/, message: "is invalid. Include hyphen(-)"}
     validates :prefecture
     validates :municipality
     validates :house_number
-    validates :phone_number, format: { with: /\A\d{10,11}\z/ }
+    validates :phone_number, format: {with: /\A\d{10,11}\z/}
     validates :use_date
-    validates :price, numericality: { only_integer: true, greater_than: 499, less_than: 1_000_000 }
+    validates :price, numericality: { only_integer: true,greater_than: 499, less_than: 1000000}
   end
+
 end
