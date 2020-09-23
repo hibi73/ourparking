@@ -13,7 +13,7 @@ class PurchasesController < ApplicationController
     if @purchase.valid?
       pay_park
       @purchase.save
-      return redirect_to root_path
+      redirect_to root_path
     else
       render 'index'
     end
@@ -26,23 +26,17 @@ class PurchasesController < ApplicationController
   end
 
   def move_to_new_user_session_purchase
-    unless user_signed_in?
-      redirect_to new_user_session_path
-    end
+    redirect_to new_user_session_path unless user_signed_in?
   end
 
   def move_to_root_path_purchase
-    park =Park.find(params[:park_id])
-    if user_signed_in? && current_user.id == park.user.id
-      redirect_to root_path
-    end
+    park = Park.find(params[:park_id])
+    redirect_to root_path if user_signed_in? && current_user.id == park.user.id
   end
 
   def move_to_root_path_park_purchase
-    park =Park.find(params[:park_id])
-    if park.purchase != nil 
-      redirect_to root_path
-    end
+    park = Park.find(params[:park_id])
+    redirect_to root_path unless park.purchase.nil?
   end
 
   def order_params
@@ -50,12 +44,11 @@ class PurchasesController < ApplicationController
   end
 
   def pay_park
-    Payjp.api_key = ENV["PAYJP_SECRET_KEY"]
+    Payjp.api_key = ENV['PAYJP_SECRET_KEY']
     Payjp::Charge.create(
       amount: @park.price,
-      card: params[:token],    
-      currency:'jpy'                 
+      card: params[:token],
+      currency: 'jpy'
     )
   end
-  
 end
