@@ -44,7 +44,7 @@ http://18.182.144.205/
 - Ruby on Rails 6.0.0
 - HTML / CSS
 - JavaScript
-- MySQL2
+- MySQL2 0.5.3
 - GitHub
 - AWS (S3 / EC2)
 - Visual Studio Code
