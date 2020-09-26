@@ -53,7 +53,7 @@ http://18.182.144.205/
 ### ・ユーザー管理機能(devise)
 <img width="1440" alt="スクリーンショット 2020-09-13 19 20 36" src="https://user-images.githubusercontent.com/66819398/93015701-6f857a80-f5f6-11ea-8d3c-3ffc7f6a1b60.png">  
 
-### ・駐車場の情報を登録する機能
+### ・駐車場の情報を登録する機能(Ajax)
 <img width="1440" alt="スクリーンショット 2020-09-13 20 01 57" src="https://user-images.githubusercontent.com/66819398/93016458-410a9e00-f5fc-11ea-868d-e07c40bef2c9.png">  
 
 ### ・駐車場の一覧を表示する機能
