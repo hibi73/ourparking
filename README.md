@@ -68,7 +68,7 @@ http://18.182.144.205/
 ### ・駐車場の情報を削除する機能
 <img width="1440" alt="スクリーンショット 2020-09-13 19 31 57" src="https://user-images.githubusercontent.com/66819398/93015885-09015c00-f5f8-11ea-92dd-364b477d605d.png">  
 
-### ・駐車場を予約購入する機能
+### ・駐車場を予約購入する機能(PAY.JP)
 <img width="1440" alt="スクリーンショット 2020-09-13 20 18 23" src="https://user-images.githubusercontent.com/66819398/93016737-6ef0e200-f5fe-11ea-8879-41a458b38019.png">  
 
 ### ・駐車場を検索する機能
