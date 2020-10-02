@@ -41,13 +41,17 @@ http://18.182.144.205/
 - 利用しやすくする為に、ホーム画面を見るだけで利用方法がわかるようにしました。
 
 ## 使用技術
-- Ruby 2.6.5
-- Ruby on Rails 6.0.0
+### フロントエンド
 - HTML / CSS
 - JavaScript
+### バックエンド
+- Ruby 2.6.5
+- Ruby on Rails 6.0.0
 - MySQL2 0.5.3
-- GitHub
+### インフラ
 - AWS (S3 / EC2)
+### ツール
+- GitHub
 - Visual Studio Code
 
 ## 実装した機能
