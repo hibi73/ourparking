@@ -50,8 +50,7 @@ http://18.182.144.205/
 - MySQL2 0.5.3
 ### インフラ
 - AWS (S3 / EC2)
-### ツール
-- GitHub
+### テキストエディタ
 - Visual Studio Code
 
 ## 実装した機能
