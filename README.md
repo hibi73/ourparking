@@ -49,7 +49,7 @@ http://our-parking.com/
 - Ruby on Rails 6.0.0
 - MySQL2 0.5.3
 ### インフラ
-- AWS (S3 / EC2)
+- AWS ( S3 / EC2 / Route 53 )
 ### テキストエディタ
 - Visual Studio Code
 
