@@ -49,6 +49,7 @@ http://our-parking.com/
 - MySQL2 0.5.3
 ### インフラ
 - AWS ( S3 / EC2 / Route 53 )
+- Docker
 ### テキストエディタ
 - Visual Studio Code
 
@@ -168,5 +169,4 @@ http://our-parking.com/
 - 地名やスポット名で駐車場をカテゴリー検索する機能
 - レスポンシブ対応
 - 多言語対応
-- 開発環境にDockerを導入
 - CircleCIを導入
