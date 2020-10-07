@@ -35,10 +35,8 @@ OUR PARKINGに駐車場の登録・掲載を行い、駐車場を利用したい
 - Ruby on Rails 6.0.0
 - MySQL2 0.5.3
 ### インフラ
-- AWS ( S3 / EC2 / Route 53 )
-- Docker
-### テキストエディタ
-- Visual Studio Code
+- AWS ( S3 / EC2 / Route 53 ) : 本番環境
+- Docker : 開発環境
 
 ## 実装した機能
 ### ・ユーザー管理機能(devise)
