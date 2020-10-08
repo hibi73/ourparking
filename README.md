@@ -2,7 +2,7 @@
 
 ## URL
 http://our-parking.com/  
-※ゲストログイン機能から気軽に、全機能をお試し頂けます※  
+※ゲストログイン機能から全機能をお試し頂けます※  
 <img width="1440" alt="ourparking-top" src="https://user-images.githubusercontent.com/66819398/95141505-5c586b80-07ac-11eb-916c-b722e41dbc83.png">  
 
 ## OUR PARKINGでできること
