@@ -47,10 +47,10 @@ OUR PARKINGは駐車場を予約したり、空いている駐車場を提供で
 ### ・駐車場の一覧を表示する機能
 <img width="1440" alt="スクリーンショット 2020-09-13 19 23 30" src="https://user-images.githubusercontent.com/66819398/93015746-e0c52d80-f5f6-11ea-8e6f-df1aef924720.png">  
 
-### ・駐車場の詳細な情報を表示する機能
+### ・駐車場の詳細情報を表示する機能
 <img width="1440" alt="スクリーンショット 2020-09-13 20 06 30" src="https://user-images.githubusercontent.com/66819398/93016645-c3e02880-f5fd-11ea-9cb7-bf588cb20b50.png">  
 
-### ・駐車場の詳細な情報を編集する機能
+### ・駐車場の詳細情報を編集する機能
 <img width="1440" alt="スクリーンショット 2020-09-13 20 15 45" src="https://user-images.githubusercontent.com/66819398/93016690-1588b300-f5fe-11ea-90aa-ad01282aecb2.png">  
 
 ### ・駐車場の情報を削除する機能
