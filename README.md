@@ -1,11 +1,11 @@
-# :blue_car: OUR PARKING
+# OUR PARKING
 
-## :globe_with_meridians: URL
+## URL
 http://our-parking.com/  
 ※ゲストログイン機能から全機能をお試し頂けます※  
 <img width="1440" alt="ourparking-top" src="https://user-images.githubusercontent.com/66819398/95141505-5c586b80-07ac-11eb-916c-b722e41dbc83.png">  
 
-## :parking: OUR PARKINGでできること
+## OUR PARKINGでできること
 OUR PARKINGは駐車場を予約したり、空いている駐車場を提供できるWebアプリケーションです。  
 自宅の空いている駐車場をお持ちの方が、駐車場の登録・掲載を行い、駐車場を利用したい方に提供できます。     
 
@@ -14,7 +14,7 @@ OUR PARKINGは駐車場を予約したり、空いている駐車場を提供で
 私の両親が年齢により車を手放したことで、自宅の駐車場が常に空いている状態です。  
 空いている駐車場を有効活用できないか考えた結果、駐車場を利用したい方に提供すればいいと考えました。  
 
-## :bust_in_silhouette: ターゲット
+## ターゲット
 - 車を手放したことで、駐車場が空いている方
 - 外出前に駐車場を予約したい方
 - 安い駐車場を利用したい方
