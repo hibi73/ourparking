@@ -5,7 +5,7 @@ http://our-parking.com/
 ※ゲストログイン機能から全機能をお試し頂けます※  
 <img width="1440" alt="ourparking-top" src="https://user-images.githubusercontent.com/66819398/95141505-5c586b80-07ac-11eb-916c-b722e41dbc83.png">  
 
-## OUR PARKINGでできること
+## :parking: OUR PARKINGでできること
 OUR PARKINGは駐車場を予約したり、空いている駐車場を提供できるWebアプリケーションです。  
 自宅の空いている駐車場をお持ちの方が、駐車場の登録・掲載を行い、駐車場を利用したい方に提供できます。     
 
