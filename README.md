@@ -36,6 +36,8 @@ OUR PARKINGは駐車場を予約したり、空いている駐車場を提供で
 ### インフラ
 - AWS ( S3 / EC2 / Route 53 ) : 本番環境
 - Docker : 開発環境
+### テキストエディタ
+- Visual Studio Code
 
 ## 実装した機能
 ### ・ユーザー管理機能(devise)
