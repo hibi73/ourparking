@@ -1,6 +1,7 @@
 # OUR PARKING
 
 ## URL
+※現在公開停止中です
 http://our-parking.com/  
 ※ゲストログイン機能から全機能をお試し頂けます※  
 <img width="1440" alt="ourparking-top" src="https://user-images.githubusercontent.com/66819398/95141505-5c586b80-07ac-11eb-916c-b722e41dbc83.png">  
